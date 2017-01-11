@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjerciciosClases
 {
-    class Program
+    class Punto2D
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
