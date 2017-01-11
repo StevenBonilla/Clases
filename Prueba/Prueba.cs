@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace EjerciciosClases
 {
-    class Program
+    class Prueba
     {
 
         static double pi = 3.1416;
 
-        public double area(double radius )
+        public double area(double radius)
         {
             double resultado;
             resultado = (radius * radius) * pi;
@@ -31,13 +31,13 @@ namespace EjerciciosClases
 
             string radius;
             double radiusDouble;
-            
+
 
             Console.WriteLine("Input the radius length: ");
             radius = Console.ReadLine();
             double.TryParse(radius, out radiusDouble);
 
-            Program figura = new Program();
+            Prueba figura = new Prueba();
             double Area = figura.area(radiusDouble);
             double Longitud = figura.longitud(radiusDouble);
 
