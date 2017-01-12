@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio1\Prueba.cs" />
+    <Compile Include="Ejercicio3\Circunferencia.cs" />
     <Compile Include="Program\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ejercicio2\Punto2D.cs" />

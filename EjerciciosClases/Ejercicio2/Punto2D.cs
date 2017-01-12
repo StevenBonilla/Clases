@@ -43,23 +43,23 @@ namespace EjerciciosClases
         }
 
 
-        public double DistanciaEuclidea(double x2, double y2)     //Función que devuelve la distancia entre dos puntos (necesarias 2 coordX y 2 coordY)
-        {
-            double resultado;
-            double x1 = this.getX();
-            double y1 = this.getY();
-            resultado = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-            return resultado;
-        }
+        //public double DistanciaEuclidea(double x2, double y2)     //Función que devuelve la distancia entre dos puntos (necesarias 2 coordX y 2 coordY)
+        //{
+        //    double resultado;
+        //    double x1 = this.getX();
+        //    double y1 = this.getY();
+        //    resultado = ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        //    return resultado;
+        //}
 
-        public double DistanciaEuclidea(Punto2D p2)     //Función que devuelve la distancia entre dos puntos (necesarias 2 coordX y 2 coordY)
+        public double DistanciaEuclidea(Punto2D p2)     //Función que devuelve la distancia entre dos puntos (necesarias 2 coordX y 2 coordY). Al haber llamado al método con el punto1, no será necesario pasar sus valores, los toma directamente con this
         {
             double resultado;
             double x1 = this.getX();
             double y1 = this.getY();
             double x2 = p2.getX();
             double y2 = p2.getY();
-            resultado = (Math.Sqrt((x2 - x1)*(x2 - x1) + (y2 - y1) * (y2 - y1)));
+            resultado = (Math.Sqrt((x2 - x1)*(x2 - x1) + (y2 - y1) * (y2 - y1)));   //Calcula la distancia euclidea entre 2 puntos
             return resultado;
         }
 
